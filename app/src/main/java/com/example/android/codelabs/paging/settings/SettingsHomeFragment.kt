@@ -29,6 +29,14 @@ class SettingsHomeFragment : Fragment() {
             Navigation.findNavController(view).navigate(R.id.action_settingsHomeFragment_to_searchRepositoriesActivity)
         }
 
+        go_to_viewpager.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_settingsHomeFragment_to_viewPagerActivity)
+        }
+
+        go_to_stateflow.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_settingsHomeFragment_to_stateFlowActivity)
+        }
+
         settings_fab.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_settingsHomeFragment_to_settingsFragment)
         }

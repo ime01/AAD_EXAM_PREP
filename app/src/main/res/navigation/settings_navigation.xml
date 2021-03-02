@@ -18,6 +18,12 @@
         <action
             android:id="@+id/action_settingsHomeFragment_to_searchRepositoriesActivity"
             app:destination="@id/searchRepositoriesActivity" />
+        <action
+            android:id="@+id/action_settingsHomeFragment_to_stateFlowActivity"
+            app:destination="@id/stateFlowActivity" />
+        <action
+            android:id="@+id/action_settingsHomeFragment_to_viewPagerActivity"
+            app:destination="@id/viewPagerActivity" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -32,4 +38,14 @@
         android:name="com.example.android.codelabs.paging.ui.SearchRepositoriesActivity"
         android:label="activity_search_repositories"
         tools:layout="@layout/activity_search_repositories" />
+    <activity
+        android:id="@+id/stateFlowActivity"
+        android:name="com.example.android.codelabs.paging.stateflow.StateFlowActivity"
+        android:label="activity_state_flow"
+        tools:layout="@layout/activity_state_flow" />
+    <activity
+        android:id="@+id/viewPagerActivity"
+        android:name="com.example.android.codelabs.paging.viewpagerwithtablayout.ViewPagerActivity"
+        android:label="activity_view_pager"
+        tools:layout="@layout/activity_view_pager" />
 </navigation>
