@@ -24,6 +24,9 @@
         <action
             android:id="@+id/action_settingsHomeFragment_to_viewPagerActivity"
             app:destination="@id/viewPagerActivity" />
+        <action
+            android:id="@+id/action_settingsHomeFragment_to_urlManipulationActivity"
+            app:destination="@id/urlManipulationActivity" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
@@ -48,4 +51,9 @@
         android:name="com.example.android.codelabs.paging.viewpagerwithtablayout.ViewPagerActivity"
         android:label="activity_view_pager"
         tools:layout="@layout/activity_view_pager" />
+    <activity
+        android:id="@+id/urlManipulationActivity"
+        android:name="com.example.android.codelabs.paging.urlmanipulation.UrlManipulationActivity"
+        android:label="activity_url_manipulation"
+        tools:layout="@layout/activity_url_manipulation" />
 </navigation>

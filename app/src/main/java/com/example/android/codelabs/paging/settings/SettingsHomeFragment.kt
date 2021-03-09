@@ -25,6 +25,10 @@ class SettingsHomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        go_to_url.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.action_settingsHomeFragment_to_urlManipulationActivity)
+        }
+
         goto_paging_activity.setOnClickListener {
             Navigation.findNavController(view).navigate(R.id.action_settingsHomeFragment_to_searchRepositoriesActivity)
         }
